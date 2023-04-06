@@ -16,5 +16,7 @@ def login():
 
     return render_template('logined.html', email=email, message='로그인성공')
 
-app.debug = True
-app.run(host='0.0.0.0', port=8080)
+# app.debug = True
+# app.run(host='0.0.0.0', port=8080)
+if __name__ == '__main__':
+  app.run(debug=True)
